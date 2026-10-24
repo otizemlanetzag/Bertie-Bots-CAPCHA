@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "api/check.py": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/api/check", "destination": "/api/check" }
+  ]
+}
