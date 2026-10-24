@@ -63,7 +63,7 @@ class handler(BaseHTTPRequestHandler):
                 return self._send(200, {
                     "ok": True,
                     "risk_score": round(score, 2),
-                    "challenge_required": score >= 0.65,
+                    "challenge_required": score >= 0.8,
                     "authenticator_available": auth_available,
                     "classification": "needs_review" if score >= 0.65 else "no_challenge",
                     "message": "An extra interaction check is suggested by the demo heuristic." if score >= 0.65 else "No extra challenge suggested by the demo heuristic."
