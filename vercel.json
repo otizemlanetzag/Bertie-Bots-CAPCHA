@@ -4,8 +4,5 @@
     "api/check.py": {
       "maxDuration": 10
     }
-  },
-  "rewrites": [
-    { "source": "/api/check", "destination": "/api/check" }
-  ]
+  }
 }
